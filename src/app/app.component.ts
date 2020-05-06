@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+  nombre: string = "Frank";
+  nombre_completo: string = "frank gabriel montalvo ochoa";
+  PI: number = Math.PI;
+  a: number = 0.517;
+  salario: number = 394.5;
+  persona: any = {
+    id: 1,
+    nombre: "FGMO",
+    edad: 24
+  };
+  promesa: any = new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Hola'), 1500);
+  });
+  fecha: Date = new Date();
+  video: string = "GccwGBwqODw";
+  constrasenia: string = "Abc.246";
+  mostrar: boolean = true;
 }
